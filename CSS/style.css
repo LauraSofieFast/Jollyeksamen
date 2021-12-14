@@ -1,0 +1,208 @@
+/**
+ * fil: css/style.css
+ **/
+
+/* Reset: Meyer Style */
+/* fjerner default browser styles */
+@import 'reset.css';
+
+/* Farve- og fontvariabler */
+:root {
+  /* farver */
+
+
+  /* fonte */
+  --overskrift: 'avenir';
+  --broedtekst: 'niveau-grotesk';
+
+  /* whitespace */
+  --whitespace: .5rem;
+}
+
+/* Wrap */
+#wrap {
+  min-height: 100vh;
+}
+
+
+main {
+  overflow: hidden;
+}
+
+body {
+  background-color: #f3f0ed;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Header */
+
+header {
+  background-color: #5e2d0f;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+}
+
+.headerikoner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.gg-search {
+  font-size: 25px;
+  color: #efdbcf;
+}
+
+.gg-user {
+  color: #efdbcf;
+  display: inline-block;
+}
+
+.searchikon {
+justify-content: space-between;
+}
+
+header img {
+  height: 100px;
+}
+
+/* Forsidebilleder mobil */
+
+.forsidebilleder img {
+  max-width: 100%;
+  display: flex;
+}
+
+
+/* slideshow */
+
+.slideshow a {
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+}
+
+.slideshow {
+  overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.slideshow img {
+  width: 100%;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+/* Footer */
+
+footer {
+  background-color: #5e2d0f;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  text-align: center;
+  color: #efdbcf;
+  padding: 5px;
+}
+
+.footerelementer li {
+  display: inline;
+  padding: 5px;
+}
+
+.footerelementer a {
+  color: #efdbcf;
+  text-decoration: none;
+}
+
+.socials li {
+  color: #efdbcf;
+  padding: 5px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #efdbcf;
+}
+
+
+
+
+/* Her begynder de forskellige devices */
+
+/* 1. Mobile enheder */
+@media only screen and (max-width: 600px) { }
+#searchikon, #userikon {
+  display: none;
+}
+
+/* 2. Tablets */
+
+@media only screen and (min-width: 600px) { }
+.slideshow {
+  display: none;
+}
+
+
+/* 3. Stor skærm (slut her) */
+@media only screen and (min-width: 768px) { }
+
+
+
+@media only screen and (min-width: 992px) { }
+
+
+
+
+@media only screen and (min-width: 1200px){ }
