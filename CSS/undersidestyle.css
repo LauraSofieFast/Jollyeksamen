@@ -569,13 +569,34 @@ input[type="checkbox"]{
   font-size: 25px;
   font-family: baskerville-urw, serif;
   font-style: normal;
+  margin-top: 10px;
+}
+
+.labeloverskrift1 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: baskerville-urw, serif;
+  font-style: normal;
+  margin-top: 10px;
 }
 
 .textlabel {
-  font-weight: 600;
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 20px;
   font-family: baskerville-urw, serif;
   font-style: normal;
+  padding: 15px;
+  text-align: center;
+}
+
+.textlabel1 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: baskerville-urw, serif;
+  font-style: normal;
+  padding: 15px;
+  text-align: center;
 }
 
 /* Her begynder de forskellige devices */
