@@ -13,7 +13,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   	<!-- CSS -->
-  	<link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="css/undersidestyle.css">
     <link rel="stylesheet" href="css/burgermenu.css">
 
   	<!-- favicon = ikon i faneblad / browser -->
@@ -71,36 +71,80 @@
         </nav>
     </header>
 <main>
-  <div id="cf">
-  <img class="bottom" src="images/forsideshow10.png" />
-  <img class="top" src="images/forsideshow1.png" />
-</div>
 
-  <div class="slideshow">
-    <div class="wrapper">
-      <img src="images/slide1.png" alt="">
-      <img src="images/slide3.png" alt="">
-      <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg" alt="">
-      <img src="images/slide4.png" alt="">
+<h2 class="labeloverskrift">Jolly Cola går grøn!</h2>
+<br>
+<p class="textlabel">I forbindelse med at Jolly Cola fra det nye år producerer flasker med 100% genanvendelig plast, har vi opstillet denne konkurrence.
+  Vi har designet fire forskellige labels, hvoraf du kan være med til at stemme på, hvilket label der skal på vores flakser som kommer på hylderne i en begrænset periode i forbindelse med lanceringen af vores nye flasker.
+</p>
+
+<h2 class="labeloverskrift">Label design nr. 1</h2>
+<img class="labels" src="images/label1.png" alt="">
+<h2 class="labeloverskrift">Label design nr. 2</h2>
+<img class="labels" src="images/label2.png" alt="">
+<h2 class="labeloverskrift">Label design nr. 3</h2>
+<img class="labels" src="images/label3.png" alt="">
+<h2 class="labeloverskrift">Label design nr. 4</h2>
+<img class="labels" src="images/label4.png" alt="">
+
+
+    <div class="wrapper1">
+      <h2 class="polloverskrift">Stem på dit foretrukne label design</h2>
+      <div class="poll-area">
+        <input type="checkbox" name="poll" id="opt-1">
+        <input type="checkbox" name="poll" id="opt-2">
+        <input type="checkbox" name="poll" id="opt-3">
+        <input type="checkbox" name="poll" id="opt-4">
+        <label for="opt-1" class="opt-1">
+          <div class="row">
+            <div class="column">
+              <span class="circle"></span>
+              <span class="text">Label 1</span>
+            </div>
+            <span class="percent">30%</span>
+          </div>
+          <div class="progress" style='--w:30;'></div>
+        </label>
+        <label for="opt-2" class="opt-2">
+          <div class="row">
+            <div class="column">
+              <span class="circle"></span>
+              <span class="text">Label 2</span>
+            </div>
+            <span class="percent">20%</span>
+          </div>
+          <div class="progress" style='--w:20;'></div>
+        </label>
+        <label for="opt-3" class="opt-3">
+          <div class="row">
+            <div class="column">
+              <span class="circle"></span>
+              <span class="text">Label 3</span>
+            </div>
+            <span class="percent">40%</span>
+          </div>
+          <div class="progress" style='--w:40;'></div>
+        </label>
+        <label for="opt-4" class="opt-4">
+          <div class="row">
+            <div class="column">
+              <span class="circle"></span>
+              <span class="text">Label 4</span>
+            </div>
+            <span class="percent">10%</span>
+          </div>
+          <div class="progress" style='--w:10;'></div>
+        </label>
+      </div>
     </div>
-  </div>
-  <section class="forsidebilleder">
-  				<article>
-            <a href="index.html"><img src="images/11kampagner.png" alt="konkurrencer"></a>
-  				</article>
-  			</section>
 
-  			<section class="forsidebilleder">
-  				<article>
-  							<a href="tidslinjeogkontaktmenu.html"><img src="images/11omjollycola.png" alt="Bliv frivillig"></a>
-  				</article>
-  			</section>
+   <script src="script.js"></script>
 
-  			<section class="forsidebilleder">
-  				<article>
-  						<a href="webshop.html"><img src="images/11produkter.png" alt="Om hmt"></a>
-  				</article>
-  			</section>
+  </body>
+  </html>
+
+</main>
+
     <footer>
       <p>Følg os på Instagram & Facebook</p>
       <ul class="socials">
@@ -114,7 +158,5 @@
         </ul>
         <p>&copy;Jolly Cola, Alle rettigheder forbeholdes</p>
     </footer>
-    </main>
-    </div>
   </body>
 </html>

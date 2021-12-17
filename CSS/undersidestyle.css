@@ -434,6 +434,150 @@ transform: translateY(0);
 	text-decoration: none;
 }
 
+
+/* Voting Poll */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::selection{
+  color: #fff;
+  background: #5e2d0f;
+}
+.wrapper1{
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  margin: auto;
+  width: 50%;
+}
+.polloverskrift{
+  font-size: 22px;
+  font-weight: 600;
+  font-family: baskerville-urw, serif;
+  font-style: normal;
+}
+
+.text {
+  font-family: baskerville-urw, serif;
+}
+.wrapper1 .poll-area{
+  margin: 20px 0 15px 0;
+}
+.poll-area label{
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 8px 15px;
+  border: 2px solid #e6e6e6;
+  transition: all 0.2s ease;
+}
+.poll-area label:hover{
+  border-color: #ddd;
+}
+label.selected{
+  border-color: #5e2d0f;!important;
+}
+label .row{
+  display: flex;
+  pointer-events: none;
+  justify-content: space-between;
+}
+label .row .column{
+  display: flex;
+  align-items: center;
+}
+label .row .circle{
+  height: 19px;
+  width: 19px;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+label.selected .row .circle{
+  border-color: #5e2d0f;
+}
+label .row .circle::after{
+  content: "";
+  height: 11px;
+  width: 11px;
+  background: #5e2d0f;
+  border-radius: inherit;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  display: none;
+}
+.poll-area label:hover .row .circle::after{
+  display: block;
+  background: #e6e6e6;
+}
+label.selected .row .circle::after{
+  display: block;
+  background: #5e2d0f;!important;
+}
+label .row span{
+  font-size: 16px;
+  font-weight: 500;
+}
+label .row .percent{
+  display: none;
+}
+label .progress{
+  height: 7px;
+  width: 100%;
+  position: relative;
+  background: #f0f0f0;
+  margin: 8px 0 3px 0;
+  border-radius: 30px;
+  display: none;
+  pointer-events: none;
+}
+label .progress:after{
+  position: absolute;
+  content: "";
+  height: 100%;
+  background: #ccc;
+  width: calc(1% * var(--w));
+  border-radius: inherit;
+  transition: all 0.2s ease;
+}
+label.selected .progress::after{
+  background: #efdbcf;
+}
+label.selectall .progress,
+label.selectall .row .percent{
+  display: block;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
+
+.labels {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.labeloverskrift {
+  text-align: left;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: baskerville-urw, serif;
+  font-style: normal;
+}
+
+.textlabel {
+  font-weight: 600;
+  font-size: 25px;
+  font-family: baskerville-urw, serif;
+  font-style: normal;
+}
+
 /* Her begynder de forskellige devices */
 
 /* 1. Mobile enheder */

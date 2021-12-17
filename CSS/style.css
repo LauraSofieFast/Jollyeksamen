@@ -24,6 +24,26 @@
   min-height: 100vh;
 }
 
+/* forsideshow */
+
+#cf {
+  position:relative;
+  height: auto;
+  max-width: 100%
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
 
 main {
   overflow: hidden;
@@ -182,25 +202,48 @@ footer p {
 /* Her begynder de forskellige devices */
 
 /* 1. Mobile enheder */
-@media only screen and (max-width: 600px) { }
+@media only screen and (max-width: 600px) {
+#searchikon, #userikon {
+  display: none;
+}
+.slideshow {
+  display: none;
+}
+#cf {
+  display: none;
+}
+}
+
+
+
+/* 2. Tablets */
+
+@media only screen and (min-width: 600px) {
+.slideshow {
+  display: none;
+}
 #searchikon, #userikon {
   display: none;
 }
 
-/* 2. Tablets */
-
-@media only screen and (min-width: 600px) { }
-.slideshow {
-  display: none;
 }
 
 
 /* 3. Stor skærm (slut her) */
-@media only screen and (min-width: 768px) { }
+@media only screen and (min-width: 768px) {
+  .forsidebilleder {
+    
+  }
+}
 
 
 
-@media only screen and (min-width: 992px) { }
+@media only screen and (min-width: 992px) {
+
+.forsidebilleder {
+
+}
+}
 
 
 
