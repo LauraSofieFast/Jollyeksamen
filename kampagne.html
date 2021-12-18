@@ -15,6 +15,7 @@
   	<!-- CSS -->
   	<link rel="stylesheet" href="css/undersidestyle.css">
     <link rel="stylesheet" href="css/burgermenu.css">
+    <link rel="stylesheet" href="css/kampagner.css">
 
   	<!-- favicon = ikon i faneblad / browser -->
     <link rel="icon" href="images/favicon.ico.png">
@@ -48,7 +49,7 @@
               <div>
                 <ul>
                   <li><a href="index.html">Hjem</a></li>
-                  <li><a href="index.html">Kampagner</a></li>
+                  <li><a href="kampagne.html">Kampagner</a></li>
                   <li><a href="tidslinjeogkontaktmenu.html">Om Jolly Cola</a></li>
                   <li><a href="index.html">Produkter</a></li>
                 </ul>
@@ -71,6 +72,22 @@
         </nav>
     </header>
 <main>
+  <section id="deskbilleder">
+  <article class="desktopforsidebilleder">
+    <div class="column">
+      <a href="kampagne.html"><img id="popup1" src="images/kampagnernav.png" alt="kampagne"></a>
+    </div>
+    <div class="column">
+      <a href="tidslinje.html"><img id="popup2" src="images/omjollycolanav.png" alt="omcola"></a>
+    </div>
+    <div class="column">
+      <a href="webshop.html"><img id="popup3" src="images/produkternav.png" alt="produkter"></a>
+    </div>
+    <div class="column">
+      <a href="kontaktos.html"><img id="popup4" src="images/kontaktosnav.png" alt="kontakt"></a>
+    </div>
+  </article>
+</section>
 
 <h2 class="labeloverskrift1">Jolly Cola går grøn!</h2>
 <br>
@@ -91,7 +108,6 @@
 <img class="labels" src="images/label4.png" alt="">
 
 
-
     <div class="wrapper1">
       <h2 class="polloverskrift">Stem på dit foretrukne label design</h2>
       <div class="poll-area">
@@ -100,7 +116,7 @@
         <input type="checkbox" name="poll" id="opt-3">
         <input type="checkbox" name="poll" id="opt-4">
         <label for="opt-1" class="opt-1">
-          <div class="row">
+          <div class="row1">
             <div class="column">
               <span class="circle"></span>
               <span class="text">Label 1</span>
@@ -110,7 +126,7 @@
           <div class="progress" style='--w:30;'></div>
         </label>
         <label for="opt-2" class="opt-2">
-          <div class="row">
+          <div class="row1">
             <div class="column">
               <span class="circle"></span>
               <span class="text">Label 2</span>
@@ -120,7 +136,7 @@
           <div class="progress" style='--w:20;'></div>
         </label>
         <label for="opt-3" class="opt-3">
-          <div class="row">
+          <div class="row1">
             <div class="column">
               <span class="circle"></span>
               <span class="text">Label 3</span>
@@ -130,7 +146,7 @@
           <div class="progress" style='--w:40;'></div>
         </label>
         <label for="opt-4" class="opt-4">
-          <div class="row">
+          <div class="row1">
             <div class="column">
               <span class="circle"></span>
               <span class="text">Label 4</span>
@@ -143,6 +159,30 @@
     </div>
 
    <script src="script.js"></script>
+
+   <a id="tilmelding">
+   </a>
+   	<div class="row2">
+   <p class="textlabel">Tilmeld dig konkurrencen her:</p>
+   <div class="containerform">
+   <form action="action_page.php">
+
+   	<label for="fname">Navn</label>
+   	<input type="text" id="fname" name="firstname" placeholder="Dit fulde navn..">
+
+   	<label for="lname">E-mail</label>
+   	<input type="text" id="email" name="lastname" placeholder="Din e-mail..">
+   	<input type="submit" value="Tilmeld" onclick="msg()">
+
+   </form>
+   </div>
+   </div>
+   <script>
+   function msg() {
+     alert("Tak! Du er nu tilmeldt konkurrencen.");
+   }
+
+   </script>
 
   </body>
   </html>
