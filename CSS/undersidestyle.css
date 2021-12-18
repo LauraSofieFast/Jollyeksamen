@@ -55,6 +55,24 @@ body {
   color: black;
 }
 
+.cookiesoverskrift {
+  font-family: baskerville-urw, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 10px;
+  text-align: left;
+}
+
+.cookiesbroedtekst {
+  font-family: baskerville, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+
+
 .maps img {
   max-width: 100%;
   column-span: all;
@@ -343,7 +361,7 @@ footer p {
 
 @media only screen and (min-width: 600px) {
 .menu-wrap {display:none;}
-
+#deskbilleder {display: none;}
 }
 
 
@@ -351,6 +369,7 @@ footer p {
 /* 3. Stor skærm (slut her) */
 @media only screen and (min-width: 768px) {
 .menu-wrap {display:none;}
+.forsidebilleder {display: none;}
 }
 
 
