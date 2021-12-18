@@ -15,6 +15,7 @@
   	<!-- CSS -->
   	<link rel="stylesheet" href="css/undersidestyle.css">
     <link rel="stylesheet" href="css/burgermenu.css">
+    <link rel="stylesheet" href="css/kampagner.css">
 
   	<!-- favicon = ikon i faneblad / browser -->
     <link rel="icon" href="images/favicon.ico.png">
@@ -49,7 +50,7 @@
               <div>
                 <ul>
                   <li><a href="index.html">Hjem</a></li>
-                  <li><a href="kampagne.html">Kampagner</a></li>
+                  <li><a href="kampagnemenu.html">Kampagner</a></li>
                   <li><a href="tidslinjeogkontaktmenu.html">Om Jolly Cola</a></li>
                   <li><a href="webshop.html">Produkter</a></li>
                 </ul>
@@ -92,6 +93,43 @@
         </div>
       </article>
     </section>
+
+    <img class="forhandlere" src="images/dyrkernostalgien.png" alt="">
+    <h2 class="undersideoverskrift">Vind præmier ved at købe Jolly Cola og indtast koden fra låget.</h2>
+    <p class="undersidebroedtekst">Vi har taget Jolly Colas design tilbage i tiden og givet det et friskt "gammel" pust der emmer af nostalgi. Selvom udseendet ændrer sig, er smagen helt den samme. Det er den cola du kender og elsker. Dansk, original og nu i 100% genanvendelig plast.
+    </p>
+
+<div class="forsideshow1">
+  <img src="images/forsideshow10.png" alt="">
+</div>
+
+
+    <p class="undersidebroedtekst">Lige nu kan du vinde fede præmier ved at deltage i kampagnen. Sådan deltager du:
+    </p>
+    <p class="undersidebroedtekst">Step 1</p>
+    <p class="undersidebroedtekst">Tag til din nærmeste forhandler af Jolly Cola og køb en flaske eller to. Se din nærmeste forhandler <a href="forhandlere.html">her</a>.</p>
+    <p class="undersidebroedtekst">Step 2</p>
+        <p class="undersidebroedtekst">Skru låget af. Inde i låget står der en 8-cifret kode.</p>
+    <p class="undersidebroedtekst">Step 3</p>
+        <p class="undersidebroedtekst">Indtast koden her på siden og se med det samme om du har vundet!</p>
+    <p class="undersidebroedtekst"> </p>
+
+
+    <div class="containerform">
+    <form action="action_page.php">
+      <label for="lname">Indtast koden her og se om du har vundet.</label>
+      <input type="text" id="lname" name="lastname" placeholder="8-cifret kode">
+
+    	<input type="submit" value="Indsend" onclick="msg()">
+    </form>
+    </div>
+
+    <script>
+    function msg() {
+      alert("Desværre! Du vandt ikke noget denne gang. Prøv igen med en ny kode.");
+    }
+
+    </script>
 
     <footer>
       <p>Følg os på Instagram & Facebook</p>

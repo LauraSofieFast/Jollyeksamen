@@ -35,6 +35,53 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/paper-2.png");
 }
 
+.undersideoverskrift {
+  font-family: baskerville-urw, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.undersidebroedtekst {
+  font-family: baskerville, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.undersidebroedtekst a {
+  color: black;
+}
+
+.maps img {
+  max-width: 100%;
+  column-span: all;
+}
+
+.maps {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.forhandlere {
+  max-width: 100%;
+}
+
+.forsideshow1 img {
+  max-width: 80%;
+}
+
+.forsideshow1 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+
 /* Header */
 
 header {
@@ -169,13 +216,14 @@ h2 {
 
 /* slideshow */
 
-.slideshowwrap {
+.slideshowwrapkontakt {
   display: flex;
   justify-content: center;
+  padding: 15px;
 }
 
 .slideshowinsta a {
-    width: 50%;
+    width: 100%;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;

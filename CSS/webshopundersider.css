@@ -61,6 +61,14 @@ transform: translateY(0);
 
 /*webgalleri for produkter */
 
+.brewerbox {
+  text-decoration: none;
+  color: #5e2d0f;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .produktbeskrivelse {
   font-family: baskerville-urw, serif;
   font-weight: 400;
