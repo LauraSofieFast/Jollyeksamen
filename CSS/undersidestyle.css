@@ -164,6 +164,45 @@ h2 {
     }
 }
 
+
+
+/* slideshow */
+
+.slideshowwrap {
+  display: flex;
+  justify-content: center;
+}
+
+.slideshowinsta a {
+    width: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.slideshowinsta {
+  width: 40vmin;
+  overflow: hidden;
+  border: 2px solid black;
+  box-sizing: border-box;
+  border: 8px solid #efdbcf;
+  border-radius: 8px;
+  box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+  display: inline-block;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.slideshowinsta img {
+  width: 100%;
+}
+
 /* Footer */
 
 footer {
@@ -234,10 +273,17 @@ footer p {
 /* Her begynder de forskellige devices */
 
 /* 1. Mobile enheder */
-@media only screen and (max-width: 600px) { }
-#searchikon, #userikon {
-  display: none;
-}
+@media only screen and (max-width: 600px) {
+  #searchikon, #userikon {display: none;}
+  .slideshow {display: none;}
+  #cf {display: none;}
+  .indextext {display: none;}
+  .indextext {display: none;}
+  .deltagnu {display: none;}
+  #deskbilleder {display: none;}
+  .navbar {display: none;}
+  .quizforside {display: none;}
+ }
 
 /* Place the timelime to the left */
   .timeline::after {

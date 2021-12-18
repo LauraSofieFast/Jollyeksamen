@@ -274,7 +274,7 @@ footer p {
 @media only screen and (min-width: 768px) {
   .forsidebilleder {display: none;}
 .menu-wrap {display:none;}
-
+#searchikon, #userikon {display: none;}
 }
 
 
@@ -282,6 +282,7 @@ footer p {
 @media only screen and (min-width: 992px) {
 .menu-wrap {display:none;}
   .forsidebilleder {display: none;}
+  #searchikon, #userikon {display: none;}
 }
 
 
@@ -289,5 +290,6 @@ footer p {
 
 @media only screen and (min-width: 1200px){
   .forsidebilleder {display: none;}
+  #searchikon, #userikon {display: none;}
   .menu-wrap {display:none;}
 }
