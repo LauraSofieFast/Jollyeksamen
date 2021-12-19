@@ -210,4 +210,10 @@ input[type=submit]:hover {
   margin-bottom: 15px;
 
 }
+
+@media only screen and (min-width: 600px) {
+  .containerform {width: 40%;}}
+
+  @media only screen and (min-width: 768px) {
+  .containerform {width: 40%;}}
 /* Tilmeldingsblanket slut*/

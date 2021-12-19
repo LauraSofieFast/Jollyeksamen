@@ -76,12 +76,15 @@ body {
 .maps img {
   max-width: 100%;
   column-span: all;
+  border: solid 5px white;
+  border-radius: 2px;
 }
 
 .maps {
   margin: 0;
   display: flex;
   justify-content: center;
+
 }
 
 .forhandlere {
@@ -90,6 +93,7 @@ body {
 
 .forsideshow1 img {
   max-width: 80%;
+  margin: 10px;
 }
 
 .forsideshow1 {
@@ -98,6 +102,89 @@ body {
   justify-content: center;
 }
 
+
+/* nav-bar */
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #f2e2d0;
+  font-family: Arial;
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 26px;
+  font-family: 'baskerville-urw', sans-serif;
+  font-weight: 600;
+  color: #3b1a06;
+  text-align: center;
+  padding: 14px 60px;
+  text-decoration: none;
+  margin-left: 0
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 26px;
+  font-family: 'baskerville-urw', sans-serif !important;
+  font-weight: 600 !important;
+  border: none;
+  outline: none;
+  color: #3b1a06;
+  padding: 8px 60px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f2e2d0;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f2e2d0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: 'baskerville-urw', sans-serif;
+  font-weight: 600;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #3b1a06;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* navbar slut */
 
 
 /* Header */
@@ -336,6 +423,66 @@ footer p {
 
 }
 
+.tekstindholdunderside h1{
+  font-family: 'baskerville-urw', serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+}
+
+.tekstindholdunderside h2{
+  font-family: 'baskerville-urw', serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+}
+
+.tekstindholdunderside h3{
+  font-family: 'baskerville-urw', serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 15px;
+}
+
+.tekstindholdunderside p{
+  font-family: 'baskerville-urw', serif;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: justify;
+  margin: 15px;
+}
+
+.tekstindholdunderside a{
+  color: black;
+}
+
+
+.centertext p{
+  font-family: 'baskerville-urw', serif;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  margin: 15px;
+}
+
+.centertext a{
+  color: black;
+}
+
+.groenbillede {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.groenbillede img {
+  max-width: 100%;
+}
+
 
 /* Her begynder de forskellige devices */
 
@@ -347,7 +494,6 @@ footer p {
   .indextext {display: none;}
   .indextext {display: none;}
   .deltagnu {display: none;}
-  #deskbilleder {display: none;}
   .navbar {display: none;}
   .quizforside {display: none;}
  }
@@ -361,8 +507,24 @@ footer p {
 
 @media only screen and (min-width: 600px) {
 .menu-wrap {display:none;}
-#deskbilleder {display: none;}
-.slideshow-container {max-width: 60%;}
+.slideshow-container {width: 60%;}
+.produktbeskrivelse, .cookiesbroedtekst {margin-left:300px;
+margin-right:300px; }
+#groentekst {margin-left: 250px;
+margin-right: 250px;}
+.forhandlere img {max-height: 500px;
+max-width: 100%}
+.forhandlere {
+  margin: 0;
+  display: flex;
+  justify-content: center;}
+  .maps img {
+  max-height: 300px;}
+  .groenbillede img {width: 80%;}
+  .forsideshow1 img {width: 50%;}
+  .tekstindholdunderside h3 {margin-left: 200px;
+  margin-right: 200px;}
+
 }
 
 
@@ -371,31 +533,38 @@ footer p {
 @media only screen and (min-width: 768px) {
 .menu-wrap {display:none;}
 .forsidebilleder {display: none;}
-.slideshow-container {max-width: 50%;}
+.slideshow-container {width: 50%;}
+.produktbeskrivelse, .cookiesbroedtekst {margin-left:300px;
+margin-right:300px; }
+#groentekst {margin-left: 250px;
+margin-right: 250px;}
+.forhandlere img {max-height: 500px;
+max-width: 100%}
+.forhandlere {
+  margin: 0;
+  display: flex;
+  justify-content: center;}
+.maps img { max-width: 50%;}
+  .forsideshow1 img {width: 50%;}
 }
 
 
 @media only screen and (min-width: 992px) {
 .menu-wrap {display:none;}
-.labels {
-  margin: auto;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
 
-.textlabel {
-  font-weight: 400;
-  font-size: 20px;
-  font-family: baskerville-urw, serif;
-  font-style: normal;
-  padding: 15px;
-  margin-left: 60px;
-  margin-right: 60px;
-  text-align: center;
-}
-.slideshow-container {max-width: 50%;}
+.slideshow-container {width: 50%;}
+.produktbeskrivelse, .cookiesbroedtekst{margin-left: 300px;
+margin-right:300px; }
+#groentekst {margin-left: 250px;
+margin-right: 250px;}
+.forhandlere img {max-height: 500px;
+max-width: 100%}
+.forhandlere {
+  margin: 0;
+  display: flex;
+  justify-content: center;}
+  .maps img { max-width: 50%;}
+.forsideshow1 img {width: 50%;}
 }
 
 
