@@ -63,12 +63,6 @@
           <div>
             <a href="index.html"><img src="images/11jolly1959.png" alt=""></a>
           </div>
-          <div id="userikon">
-            <i class="gg-user"></i>
-          </div>
-          <div id="searchikon">
-            <i class="gg-search"></i>
-          </div>
         </div>
         </nav>
     </header>
@@ -160,12 +154,17 @@
       <label for="lname">Din e-mail</label>
       <input type="text" id="lname" name="lastname" placeholder="Din e-mail..">
 
-    	<input type="submit" value="Indsend">
+    	<input type="submit" value="Indsend" onclick="msg()">
 
     </form>
     </div>
 
+    <script>
+    function msg() {
+      alert("Tak! Du er nu tilmeldt konkurrencen.");
+    }
 
+    </script>
 
 
 

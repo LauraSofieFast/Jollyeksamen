@@ -48,6 +48,43 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/paper-2.png");
 }
 
+.tekstindholdforside h1{
+  font-family: 'baskerville-urw', serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+}
+
+.tekstindholdforside h2{
+  font-family: 'baskerville-urw', serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+}
+
+.tekstindholdforside h3{
+  font-family: 'baskerville-urw', serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 15px;
+}
+
+.tekstindholdforside p{
+  font-family: 'baskerville-urw', serif;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  margin:auto;
+}
+
+.tekstindholdforside a{
+  color: black;
+}
+
 /* Header */
 
 header {
@@ -227,10 +264,16 @@ footer p {
 /* desktop forsidebilleder */
 .desktopforsidebilleder {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .desktopforsidebilleder img {
   max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 #popup{
@@ -244,6 +287,33 @@ footer p {
 
 }
 
+.heroimg {
+  max-width: 100%;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-family: 'Yellowtail', serif;
+  border: solid 2px;
+  padding: 10px;
+}
+
+.hero-text a {
+  text-decoration: none;
+  color: #efdbcf;
+  text-shadow: 2px 2px #5e2d0f;
+}
 
 /* Her begynder de forskellige devices */
 
@@ -251,16 +321,17 @@ footer p {
 @media only screen and (max-width: 600px) {
 #searchikon, #userikon {display: none;}
 .slideshow {display: none;}
-#cf {display: none;}
 .indextext {display: none;}
 .indextext {display: none;}
 .deltagnu {display: none;}
 #deskbilleder {display: none;}
 .navbar {display: none;}
 .quizforside {display: none;}
-
+.heroimg {display:none;}
+.herotext {display:none;}
+.slideshow-container-frontp, .dotsf {display: none;}
+.tekstindholdforside {display:none;}
 }
-
 
 
 /* 2. Tablets */
@@ -269,6 +340,9 @@ footer p {
 .forsidebilleder {display:none;}
 #searchikon, #userikon {display: none;}
 .menu-wrap {display:none;}
+.hero-text {font-size: 30px;}
+.slideshow-container-frontp {max-width: 60%;}
+.slideshow-container {max-width: 60%;}
 }
 
 
@@ -277,6 +351,9 @@ footer p {
   .forsidebilleder {display: none;}
 .menu-wrap {display:none;}
 #searchikon, #userikon {display: none;}
+.hero-text {font-size: 40px;}
+.slideshow-container-frontp {max-width: 30%;}
+.slideshow-container {max-width: 50%;}
 }
 
 
@@ -285,13 +362,15 @@ footer p {
 .menu-wrap {display:none;}
   .forsidebilleder {display: none;}
   #searchikon, #userikon {display: none;}
+  .hero-text {font-size: 60px;}
+  .slideshow-container {max-width: 50%;}
 }
-
-
 
 
 @media only screen and (min-width: 1200px){
   .forsidebilleder {display: none;}
   #searchikon, #userikon {display: none;}
   .menu-wrap {display:none;}
+    .hero-text {font-size: 60px;}
+    .slideshow-container {max-width: 50%;}
 }

@@ -91,11 +91,13 @@ transform: translateY(0);
   margin-top: 20px;
 }
 
+
 .CSSgal {
 	position: relative;
 	overflow: hidden;
 	height: 400px; /* Or set a fixed height */
 }
+
 
 /* SLIDER */
 

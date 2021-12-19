@@ -15,6 +15,7 @@
   	<!-- CSS -->
   	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/burgermenu.css">
+    <link rel="stylesheet" href="css/slideshowlabel.css">
 
   	<!-- favicon = ikon i faneblad / browser -->
     <link rel="icon" href="images/favicon.ico.png">
@@ -62,13 +63,7 @@
           <div>
             <a href="index.html"><img src="images/11jolly1959.png" alt=""></a>
           </div>
-          <div id="userikon">
-            <i class="gg-user"></i>
           </div>
-          <div id="searchikon">
-            <i class="gg-search"></i>
-          </div>
-        </div>
         </nav>
     </header>
 
@@ -96,27 +91,22 @@
   </article>
 </section>
 
-<div class="column">
-  <div class="slideshow">
-    <div class="wrapper">
-      <img src="images/label1.jpg" alt="">
-      <img src="images/label2.jpg" alt="">
-      <img src="images/label3.jpg" alt="">
-      <img src="images/label4.jpg" alt="">
-    </div>
+<div class="heroimg">
+  <img class="heroimg" src="images/finalhero.png" alt="">
+  <div class="hero-text">
+    <a href="nostalgien.html"><h1>Deltag nu</h1></a>
   </div>
+</div>
+
+  <div class="tekstindholdforside">
+    <h1>Velkommen</h1>
+      <p></p>
+      <h2>Jolly Cola går grøn!</h2>
+      <p>Fra 2022 vil al Jolly Cola emballage være produceret af 100 % genanvendeligt plast.</p>
+      <br>
+      <p>For at fejre det, har vi designet fire nye labels, som vil komme på hylden i en begrænset periode. Klik og se vores labels nedenunder.</p>
+      <h3>Stem på vores nye label design <a href="kampagne.html">her</a> og deltag i konkurrencen om et års forbrug af Jolly Cola.</h3>
   </div>
-
-  <p class="indextext">Stem på et nyt labeldesign & vind et års forbrug af Jolly Cola</p>
-  <a class="deltagnu" href="#">Deltag <u>her!</u></a>
-
-  <div class="column">
-  <div class="quizforside">
-      <a href="kampagne.html"><img src="images/quizogvind.jpg" alt=""></a>
-  </div>
-  </div>
-
-
 
 
 
@@ -142,6 +132,77 @@
   				</article>
   			</section>
       </div>
+
+  <!--mobil indhold slut-->
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container-frontp">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/label1.jpg" style="width:100%" alt="brunlabel">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/label2.jpg" style="width:100%" alt="groenlabel">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/label3.jpg" style="width:100%" alt="bladlabel">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/label4.jpg" style="width:100%" alt="">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prevf" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="nextf" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div class="dotsf" style="text-align:center">
+    <span class="dotf" onclick="currentSlide(1)"></span>
+    <span class="dotf" onclick="currentSlide(2)"></span>
+    <span class="dotf" onclick="currentSlide(3)"></span>
+    <span class="dotf" onclick="currentSlide(4)"></span>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
 
 
     <footer>

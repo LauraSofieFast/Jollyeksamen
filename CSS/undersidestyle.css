@@ -362,6 +362,7 @@ footer p {
 @media only screen and (min-width: 600px) {
 .menu-wrap {display:none;}
 #deskbilleder {display: none;}
+.slideshow-container {max-width: 60%;}
 }
 
 
@@ -370,6 +371,7 @@ footer p {
 @media only screen and (min-width: 768px) {
 .menu-wrap {display:none;}
 .forsidebilleder {display: none;}
+.slideshow-container {max-width: 50%;}
 }
 
 
@@ -393,6 +395,7 @@ footer p {
   margin-right: 60px;
   text-align: center;
 }
+.slideshow-container {max-width: 50%;}
 }
 
 
