@@ -71,6 +71,38 @@ body {
   text-align: left;
 }
 
+.brewerimg {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+}
+
+.brewerimg img {
+  max-width: 100%;
+}
+
+.hero-textbrew {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  font-family: 'Yellowtail', serif;
+  border: solid 2px;
+  border-style: groove;
+  box-shadow: 8px 10px #00000050;
+  padding: 10px;
+}
+
+.hero-textbrew a {
+  text-decoration: none;
+  color: #efdbcf;
+  text-shadow: 2px 2px #5e2d0f;
+}
+
 
 
 .maps img {
@@ -524,6 +556,10 @@ max-width: 100%}
   .forsideshow1 img {width: 50%;}
   .tekstindholdunderside h3 {margin-left: 200px;
   margin-right: 200px;}
+  .brewerimg img {
+    width: 40%;
+    border: solid 2px white;
+  }
 
 }
 
@@ -546,6 +582,9 @@ max-width: 100%}
   justify-content: center;}
 .maps img { max-width: 50%;}
   .forsideshow1 img {width: 50%;}
+  .brewerimg img {
+    width: 40%;
+  }
 }
 
 
@@ -565,6 +604,9 @@ max-width: 100%}
   justify-content: center;}
   .maps img { max-width: 50%;}
 .forsideshow1 img {width: 50%;}
+.brewerimg img {
+  width: 40%;
+}
 }
 
 

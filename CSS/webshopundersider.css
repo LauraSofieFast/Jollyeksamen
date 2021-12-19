@@ -1,10 +1,14 @@
 @import 'reset.css';
 
 /* webshop */
+
+
+
 .weboverskrift {
   font-family: yellowtail, sans-serif;
   font-size: 40px;
   color: #5e2d0f;
+  margin: 10px;
 }
 
 .image {
@@ -233,3 +237,30 @@ transform: translateY(0);
 }
 
 /* webshop stuff slut*/
+
+@media only screen and (min-width: 600px) {
+.produkterimidten {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.image { width: 230px;}
+}
+
+@media only screen and (min-width: 768px) {
+  .produkterimidten {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .image { width: 230px;}
+  }
+
+  @media only screen and (min-width: 992px) {
+    .produkterimidten {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .image { width: 230px;}
+    }
