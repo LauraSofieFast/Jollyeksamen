@@ -50,7 +50,8 @@ html {
   text-align: center;
   padding: 14px 60px;
   text-decoration: none;
-  margin-left: 0
+  margin-left: 0;
+  justify-content: space-between;
 }
 
 /* The dropdown container */

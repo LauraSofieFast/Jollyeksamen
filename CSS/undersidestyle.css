@@ -43,6 +43,10 @@ body {
   padding: 10px;
 }
 
+#undersideoverskrift {
+  margin: 10px;
+}
+
 .undersidebroedtekst {
   font-family: baskerville, sans-serif;
   font-size: 20px;
@@ -484,7 +488,7 @@ footer p {
   font-family: 'baskerville-urw', serif;
   font-size: 20px;
   font-weight: 200;
-  text-align: justify;
+  text-align: center;
   margin: 15px;
 }
 
