@@ -558,8 +558,8 @@ max-width: 100%}
   max-height: 300px;}
   .groenbillede img {width: 80%;}
   .forsideshow1 img {width: 50%;}
-  .tekstindholdunderside h3 {margin-left: 200px;
-  margin-right: 200px;}
+  .tekstindholdunderside h3 {margin-left: 100px;
+  margin-right: 100px;}
   .brewerimg img {
     width: 40%;
     border: solid 2px white;
@@ -589,6 +589,8 @@ max-width: 100%}
   .brewerimg img {
     width: 40%;
   }
+  .tekstindholdunderside h3 {margin-left: 100px;
+  margin-right: 100px;}
 }
 
 
@@ -611,6 +613,8 @@ max-width: 100%}
 .brewerimg img {
   width: 40%;
 }
+.tekstindholdunderside h3 {margin-left: 100px;
+margin-right: 100px;}
 }
 
 
