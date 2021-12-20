@@ -519,6 +519,9 @@ footer p {
   max-width: 100%;
 }
 
+.forhandlerimg {
+  max-width: 80%;
+}
 
 /* Her begynder de forskellige devices */
 
@@ -532,6 +535,7 @@ footer p {
   .deltagnu {display: none;}
   .navbar {display: none;}
   .quizforside {display: none;}
+  .forhandlerimg {max-width: 100%;}
  }
 
 /* Place the timelime to the left */
